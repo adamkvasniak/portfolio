@@ -1,0 +1,96 @@
+.homepage {
+  /* scroll-behavior: smooth; */
+  width: 100%;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding: 20px; /* Adjust padding to center content vertically */
+    height:100vh;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 600;
+    color: white;
+    scroll-snap-align: start;
+  
+   
+}
+  
+.typpingAnimationContainer {
+    padding: 20px;
+    width: 40%;
+}
+.typpingAnimationContainer a{
+  text-decoration: none;
+  color: rgb(0, 140, 255);
+}
+  
+.profilePic {
+    height:30vw;
+    width:30vw;
+    border-radius:50%;
+    padding: 40px;
+}  
+  
+
+
+.redTyped {
+    color: #00FF00;
+}
+
+.blueTyped {
+  color: rgb(173, 28, 173);
+}
+@media screen and (max-height: 700px) {
+  .homepage{
+    scroll-snap-type: none;
+    height: auto;
+  }
+  .mainSection {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Your CSS styles for screens under 1200px width */
+  /* For example: */
+  .mainSection {
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
+    padding: 0px;
+  
+  }
+  .homepage{
+    scroll-snap-type: none;
+    height: auto;
+  }
+  .mainSection {
+    height: auto;
+  }
+  .profilePic {
+    height: 50vw;
+    width: 50vw;
+    padding: 0;
+  }
+
+  .firstProfilePic{
+    margin-top: 40px;
+  }
+
+  .typpingAnimationContainer {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .secondSection{
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,71 @@
+.footer {
+    align-items: flex-end;
+
+    
+}
+.gold {
+    color: gold;
+}
+
+.headerContainer{
+    font-size: 3em;
+    width: 40%;
+    align-self: center;
+}
+.aboutAuthorContainer{
+    background-color: black;
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.aboutAuthorText{
+   
+    text-align: left;
+    padding: 25px;
+}
+.aboutAuthorText p{
+    font-size: 20px
+}
+.authorPhoto{
+    height: 370px;
+}
+@media screen and (max-width: 1600px) {
+    .headerContainer{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer{
+        padding-top: 170px;
+    }
+    .headerContainer {
+        font-size: 2.5em;
+        width: 80%;
+    }
+    .aboutAuthorContainer{
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+        .aboutAuthorContainer{
+            flex-direction: column;
+        }
+
+        .authorPhoto{
+            height: 290px;
+            
+            padding: 50px 50px 50px 0px;
+        }
+        .headerContainer {
+            font-size: 1.8em;
+        }
+        .aboutAuthorText{
+            padding: 20px;
+        }
+}

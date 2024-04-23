@@ -1,0 +1,19 @@
+  .badges {
+   flex-direction: row;
+    justify-content: flex-start;
+     /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .badgeImage {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+
+@media screen and (max-width: 535px) {
+    .badgeImage {
+      width: 120px;
+      height: 120px;
+    }
+}  
