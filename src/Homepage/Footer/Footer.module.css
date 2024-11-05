@@ -16,6 +16,7 @@
     background-color: black;
     width:50%;
     display: flex;
+    align-self: flex-end;
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: row;
@@ -54,11 +55,12 @@
 
 @media screen and (max-width: 600px) {
         .aboutAuthorContainer{
-            flex-direction: column;
+            flex-direction: column
+            
         }
 
         .authorPhoto{
-            height: 290px;
+            height: 190px;
             
             padding: 50px 50px 50px 0px;
         }
@@ -67,5 +69,6 @@
         }
         .aboutAuthorText{
             padding: 20px;
+            
         }
 }

@@ -54,7 +54,7 @@ const parallax = useParallax<HTMLDivElement>({
 
   return (
     <div>
-        <h1 className={styles2.blueTyped}>
+        <h1 className={styles2.rootTyped}>
         {"root# "}
         <ReactTyped
           strings={[" hobbies"]}
@@ -75,7 +75,7 @@ const parallax = useParallax<HTMLDivElement>({
       )}
 
       {isFirstTyped && (
-         <h1 className={styles2.blueTyped}>
+         <h1 className={styles2.rootTyped}>
           {"root# "}
           <ReactTyped
             strings={[" children"]}
@@ -106,7 +106,7 @@ const parallax = useParallax<HTMLDivElement>({
       )}
 
       {isThirdTyped && (
-         <h1 className={styles2.blueTyped}>
+         <h1 className={styles2.rootTyped}>
           {"root# "}
           <ReactTyped
             strings={[" funfact"]}
@@ -136,7 +136,7 @@ const parallax = useParallax<HTMLDivElement>({
       )}
 
       {isFifthTyped && (
-          <h1 className={styles2.blueTyped}>
+          <h1 className={styles2.rootTyped}>
           {"root# "}
           <ReactTyped
             strings={[" resume"]}

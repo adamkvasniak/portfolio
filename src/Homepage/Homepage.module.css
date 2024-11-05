@@ -26,6 +26,7 @@
 .typpingAnimationContainer {
     padding: 20px;
     width: 40%;
+    height: auto;
 }
 .typpingAnimationContainer a{
   text-decoration: none;
@@ -39,24 +40,18 @@
     padding: 40px;
 }  
   
-
-
 .redTyped {
     color: #00FF00;
 }
 
-.blueTyped {
+.rootTyped {
   color: rgb(173, 28, 173);
 }
-@media screen and (max-height: 700px) {
-  .homepage{
-    scroll-snap-type: none;
-    height: auto;
-  }
-  .mainSection {
-    height: auto;
-  }
+.link:hover{
+  color:gold;
+  transition: color 0.5s ;
 }
+
 
 @media screen and (max-width: 1200px) {
   /* Your CSS styles for screens under 1200px width */
@@ -92,5 +87,16 @@
 
   .secondSection{
     flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .homepage{
+    scroll-snap-type: none;
+    height: 600px;
+  }
+  .mainSection {
+    height: 600px;
+    background-color: antiquewhite;
   }
 }

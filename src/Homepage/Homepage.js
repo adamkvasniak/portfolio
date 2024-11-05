@@ -1,12 +1,13 @@
 import styles from "./Homepage.module.css"
 import React, {useRef, useEffect, useState } from 'react';
-import image from "./kvasniak1.gif"
-import image2 from "./secondSEction/profilePic2.jpeg"
-import TypingAnimation from "./TypingAnimation";
-import TypingAnimation2 from "./secondSEction/TypingAnimation2";
-import TypingAnimation3 from "./thirdSection/TypingAnimation3";
-
-import Quote from "./thirdSection/Quote";
+import image from "./FirstSection/kvasniak1.gif"
+import imageRedEyes from "./FirstSection/kvasniak_red.gif"
+import image2 from "./SecondSection/profilePic2.jpeg"
+import TypingAnimation from "./FirstSection/TypingAnimation";
+import TypingAnimation2 from "./SecondSection/TypingAnimation2";
+import TypingAnimation3 from "./ThirdSection/TypingAnimation3";
+import { ToggleButton } from "./FirstSection/TypingAnimation";
+import Quote from "./ThirdSection/Quote";
 import Footer from "./Footer/Footer";
   
 const HomePage = () => {
@@ -19,12 +20,22 @@ const HomePage = () => {
   const handleSecondAnimation1Finish = () => {
     setSecondAnimationFinished(true);
   };
+  const [currentImage, setCurrentImage] = useState(image);
+  const toggleImage = () => {
+    setCurrentImage(prevImage => (prevImage === image ? imageRedEyes : image));
+  };
+  const ToggleButton = ({ onClick, onLabel = "On", offLabel = "Off", isOn }) => (
+    <button onClick={onClick}>
+      {isOn ? onLabel : offLabel}
+    </button>
+  );
     
   return (
     <div class={styles.homepage}>
 {/* prva sekcia */}
       <div className={styles.mainSection}>
-        <img class = {`${styles.profilePic} ${styles.firstProfilePic}`} src={image}></img>
+        <img class = {`${styles.profilePic} ${styles.firstProfilePic}`} src={currentImage}></img>
+        {/* <ToggleButton onClick={toggleImage} onLabel="Red" offLabel="Blue" /> */}
         <div class = {styles.typpingAnimationContainer}>
            <TypingAnimation onAnimationFinish={handleFirstAnimation1Finish} />
         </div>

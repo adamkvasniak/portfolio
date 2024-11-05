@@ -50,7 +50,7 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
 
   return (
     <div>
-        <h1 className={styles2.blueTyped}>
+        <h1 className={styles2.rootTyped}>
         {"root# "}
         <ReactTyped
           strings={[" certifications"]}
@@ -71,7 +71,7 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
       )}
 
       {isFirstTyped && (
-         <h1 className={styles2.blueTyped}>
+         <h1 className={styles2.rootTyped}>
           {"root# "}
           <ReactTyped
             strings={[" projects"]}
@@ -95,6 +95,7 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
             backSpeed={20}
             cursorChar="|"
             showCursor={false}
+            className={styles2.link}
             onComplete={handleThirdTyped}
           />
         </h1>
@@ -105,7 +106,7 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
       
 
       {isThirdTyped && (
-         <h1 className={styles2.blueTyped}>
+         <h1 className={styles2.rootTyped}>
           {"root# "}
           <ReactTyped
             strings={[" languages"]}
@@ -129,13 +130,13 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
             backSpeed={20}
             cursorChar="|"
             showCursor={false}
-            onComplete={handleFifthTyped}
+            onComplete={handleAnimationFinish}
           />
         </h1>
       )}
 
-      {isFifthTyped && (
-          <h1 className={styles2.blueTyped}>
+      {/* {isFifthTyped && (
+          <h1 className={styles2.rootTyped}>
           {"root# "}
           <ReactTyped
             strings={[" song"]}
@@ -162,7 +163,7 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
             onComplete={handleAnimationFinish}
           />
         </h1>
-      )}
+      )} */}
 
     </div>
     
