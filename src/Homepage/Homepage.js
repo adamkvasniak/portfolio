@@ -5,7 +5,7 @@ import imageRedEyes from "./FirstSection/kvasniak_red.gif"
 import image2 from "./secondSEction/profilePic2.jpeg"
 import TypingAnimation from "./FirstSection/TypingAnimation";
 import TypingAnimation2 from "./secondSEction/TypingAnimation2";
-import TypingAnimation3 from "./ThirdSection/TypingAnimation3";
+import TypingAnimation3 from "./thirdSection/TypingAnimation3";
 import { ToggleButton } from "./FirstSection/TypingAnimation";
 import Quote from "./thirdSection/Quote";
 import Footer from "./Footer/Footer";
