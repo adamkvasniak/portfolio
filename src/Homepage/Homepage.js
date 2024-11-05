@@ -7,7 +7,7 @@ import TypingAnimation from "./FirstSection/TypingAnimation";
 import TypingAnimation2 from "./secondSEction/TypingAnimation2";
 import TypingAnimation3 from "./ThirdSection/TypingAnimation3";
 import { ToggleButton } from "./FirstSection/TypingAnimation";
-import Quote from "./ThirdSection/Quote";
+import Quote from "./thirdSection/Quote";
 import Footer from "./Footer/Footer";
   
 const HomePage = () => {
