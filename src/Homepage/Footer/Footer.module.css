@@ -31,6 +31,7 @@
 }
 .authorPhoto{
     height: 370px;
+
 }
 @media screen and (max-width: 1600px) {
     .headerContainer{

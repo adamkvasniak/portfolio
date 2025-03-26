@@ -101,6 +101,22 @@ const TypingAnimation2 = ({ onAnimationFinish })=> {
         </h1>
         </a>
       )} 
+       {isSecondTyped && (
+        <a href="https://www.bhaktabuilders.com" target="_blank" rel="noopener noreferrer">
+         <h1 >
+          <ReactTyped
+            strings={["www.bhaktabuilders.com"]}
+            typeSpeed={typingSpeed}
+            loop={false}
+            backSpeed={20}
+            cursorChar="|"
+            showCursor={false}
+            className={styles2.link}
+            onComplete={handleThirdTyped}
+          />
+        </h1>
+        </a>
+      )}
 
       
       

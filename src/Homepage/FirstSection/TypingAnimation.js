@@ -107,36 +107,6 @@ const TypingAnimation = ({ onAnimationFinish }) => {
         </h1>
       )}
 
-      {/* {isFourthTyped && (
-         <h1 className={styles.rootTyped}>
-          {"root# "}
-          <ReactTyped
-            strings={[" experience"]}
-            typeSpeed={typingSpeed}
-            loop={false}
-            backSpeed={20}
-            cursorChar="|"
-            showCursor={false}
-            onComplete={handleFifthTyped}
-            className={styles.redTyped}
-          />
-        </h1>
-      )} */}
-
-       {/* {isFifthTyped && (
-        <h1>
-          <ReactTyped
-            strings={[" 'Web developing':'1.5 year'"]}
-            typeSpeed={typingSpeed}
-            loop={false}
-            backSpeed={20}
-            cursorChar="|"
-            showCursor={false}
-            onComplete={handleSixthTyped}
-          />
-        </h1>
-      )} */}
-
       {isSixthTyped && (
         <h1 className={styles.rootTyped}>
         
@@ -160,7 +130,7 @@ const TypingAnimation = ({ onAnimationFinish }) => {
         <a href="https://github.com/adamkvasniak" target="_blank" rel="noopener noreferrer">
         <h1>
           <ReactTyped
-            strings={["https://github.com/adamkvasniak"]}
+            strings={["github.com/adamkvasniak"]}
             typeSpeed={typingSpeed}
             loop={false}
             backSpeed={20}
