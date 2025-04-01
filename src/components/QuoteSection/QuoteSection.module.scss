@@ -1,0 +1,59 @@
+@import "../../styles.scss";
+
+.quoteContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:90vw;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 600;
+  color: white;
+  scroll-snap-align: start;
+}
+.text{
+  width: 37vw;
+  text-align: left;
+}
+.quoteText {
+  margin-bottom: 10px;
+  font-size: 4.2rem;
+}
+.profilePic{
+  width:33vw;
+  height: auto;
+}
+.author{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: right;
+}
+.blue {
+  color: #0066CC;
+}
+.red {
+  color: #FF0000
+}
+
+@media (max-width:900px) {
+  .quoteText {
+    font-size: 3em;
+  }
+}
+
+@media (max-width:666px) {
+  .quoteContainer {
+    flex-direction: column-reverse;
+    width: 100%;
+}
+  .profilePic {
+    height: 50vh;
+    width: auto;
+    padding: 0;
+    align-self: center;
+    
+  }
+  .text {
+    width: 80%;
+  }
+}
+  

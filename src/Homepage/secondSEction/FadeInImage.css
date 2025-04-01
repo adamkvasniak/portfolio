@@ -1,9 +1,0 @@
-.fade-in-image {
-    opacity: 0;
-    transition: opacity 0.85s ease-in-out;
-  }
-  
-  .fade-in-image.visible {
-    opacity: 1;
-  }
-  

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css'
-import profilePic from './profilePicReal.jpg'
+import profilePic from './image copy.png'
 import mainStyle from '../Homepage.module.css'
 
 const Footer = () => {

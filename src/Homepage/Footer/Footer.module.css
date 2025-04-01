@@ -1,8 +1,8 @@
 .footer {
-    align-items: flex-end;
-
-    
+    display: flex;
+    align-items: flex-end;    
 }
+
 .gold {
     color: gold;
 }
@@ -22,7 +22,6 @@
     flex-direction: row;
 }
 .aboutAuthorText{
-   
     text-align: left;
     padding: 25px;
 }
@@ -31,7 +30,6 @@
 }
 .authorPhoto{
     height: 370px;
-
 }
 @media screen and (max-width: 1600px) {
     .headerContainer{
@@ -42,31 +40,33 @@
 @media screen and (max-width: 1200px) {
     .footer{
         padding-top: 170px;
+        flex-direction: column;
     }
     .headerContainer {
         font-size: 2.5em;
         width: 80%;
     }
     .aboutAuthorContainer{
-        flex-direction: row-reverse;
         width: 100%;
+    }
+    .aboutAuthorText {
+        align-self: flex-start;
     }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 666px) {
         .aboutAuthorContainer{
             flex-direction: column
-            
         }
 
         .authorPhoto{
-            height: 190px;
+            height: 50vh;
             
-            padding: 50px 50px 50px 0px;
         }
         .headerContainer {
             font-size: 1.8em;
+            width: 90%;
         }
         .aboutAuthorText{
             padding: 20px;

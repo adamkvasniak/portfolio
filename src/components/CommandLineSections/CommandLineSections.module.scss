@@ -1,0 +1,108 @@
+.mainSection {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  padding: 40px; /* Adjust padding to center content vertically */
+  height:100vh;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 600;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.typpingAnimationContainer {
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  align-self: flex-start;
+  margin-top:10vh;
+}
+.typpingAnimationContainer a{
+text-decoration: none;
+color: rgb(0, 140, 255);
+}
+
+.profilePic {  
+width:30vw;
+align-self: flex-end;
+margin-bottom: 20px; 
+}  
+
+.command {
+  color: #00FF00;
+}
+
+.rootTyped {
+color: rgb(215, 54, 215);
+}
+.link:hover{
+color:gold;
+transition: color 0.5s ;
+}
+
+.badges {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; /* Center vertically */
+ }
+ 
+ .badgeImage {
+   width: 200px;
+   height: 200px;
+   padding: 20px;
+ }
+
+@media screen and (max-width: 1000px) {
+  /* Your CSS styles for screens under 1200px width */
+  /* For example: */
+  .mainSection {
+
+    font-size: 12px;
+    padding: 0px;
+    height: auto;
+    
+  }
+
+  .profilePic {
+    height: 50vh;
+    width: auto;
+    padding: 0;
+    align-self: center;
+    
+  }
+  .badgeImage {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+@media screen and (max-width: 666px) {
+  .mainSection {
+    flex-direction: column;
+  }
+  .profilePic {
+    align-self: center;
+  }
+  .profilePic:first-of-type{
+    margin-top: 3vh;
+  }
+  .typpingAnimationContainer {
+    width: 80%;
+    margin-top: 0px;
+  }
+  .secondSection {
+    flex-direction: column-reverse;
+  }
+  .badgeImage {
+    width: 85px;
+    height: 85px;
+  }
+  .secondSection {
+    margin-bottom: 10vh;
+  }
+}  
