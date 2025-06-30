@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './QuoteSection.module.scss'
-import profilePic from './image.png'
+import profilePic from './image.webp'
+
 const Quote = () => {
   return (
     <div className={styles.quoteContainer}>

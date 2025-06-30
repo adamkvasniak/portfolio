@@ -4,7 +4,7 @@ import aws_badge from './aws_badge.png';
 import cisco_badge from './cisco_badge.png';
 import styles from '../CommandLineSections.module.scss';
 import { ReactTyped } from 'react-typed';
-import profilePic from './image.png'
+import profilePic from './image-1.webp'
 import CommandLineSection from '../FirstSection/CommandLineSection';
 
 const CommandLineSection2 = ({ onAnimationFinish }) => {

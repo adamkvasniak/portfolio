@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ReactTyped } from 'react-typed';
 import styles from "../CommandLineSections.module.scss";
 import { FaGithub } from "react-icons/fa";
-import profilePic from './image.png'
+import profilePic from './image.webp'
 
 
 
