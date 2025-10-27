@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { FaGithub } from "react-icons/fa";
 import aws_badge from './aws_badge.png';
 import cisco_badge from './cisco_badge.png';
 import styles from '../CommandLineSections.module.scss';
@@ -87,35 +87,38 @@ const CommandLineSection2 = ({ onAnimationFinish }) => {
       ),
     },
     {
-      prefix: "root# ",
       content: (
-        <ReactTyped
-          strings={[" languages"]}
-          typeSpeed={typingSpeed}
-          loop={false}
-          backSpeed={20}
-          cursorChar="|"
-          showCursor={false}
-          onComplete={() => setStep(6)}
-          className={styles.command}
-        />
+        <a href="https://www.adamkvasniak.com" target="_blank" rel="noopener noreferrer">
+          <ReactTyped
+            strings={["www.adamkvasniak.com"]}
+            typeSpeed={typingSpeed}
+            loop={false}
+            backSpeed={20}
+            cursorChar="|"
+            showCursor={false}
+            className={styles.link}
+            onComplete={() => setStep(6)}
+          />
+        </a>
       ),
-      className: styles.rootTyped,
     },
     {
       content: (
-        <ReactTyped
-          strings={["English, Slovak"]}
-          typeSpeed={typingSpeed}
-          loop={false}
-          backSpeed={20}
-          cursorChar="|"
-          showCursor={false}
-          onComplete={onAnimationFinish}
-        />
+        <a href="https://www.app.digem.cz" target="_blank" rel="noopener noreferrer">
+          <ReactTyped
+            strings={["www.app.digem.cz"]}
+            typeSpeed={typingSpeed}
+            loop={false}
+            backSpeed={20}
+            cursorChar="|"
+            showCursor={false}
+            className={styles.link}
+            onComplete={() => onAnimationFinish()}
+          />
+        </a>
       ),
     },
-
+    
   ];
 
   return (

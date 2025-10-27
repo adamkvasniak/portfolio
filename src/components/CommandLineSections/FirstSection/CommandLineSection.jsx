@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ReactTyped } from 'react-typed';
 import styles from "../CommandLineSections.module.scss";
-import { FaGithub } from "react-icons/fa";
+
 import profilePic from './image.webp'
 
 
@@ -29,7 +29,7 @@ const CommandLineSection = ({ onAnimationFinish }) => {
     {
       content: (
         <ReactTyped
-          strings={[" My name is Adam Kvasniak and I’m a web developer. I bring digital solutions that move your business forward."]}
+          strings={[" My name is Adam Kvasniak and I'm software engineer. I design and build fast, secure, and elegant web systems that help brands, startups, and businesses grow online."]}
           typeSpeed={typingSpeed}
           loop={false}
           backSpeed={20}
@@ -39,49 +39,21 @@ const CommandLineSection = ({ onAnimationFinish }) => {
         />
       ),
     },
-    {
-      content: (
-        <ReactTyped
-          strings={[" techstack"]}
-          typeSpeed={typingSpeed}
-          loop={false}
-          backSpeed={20}
-          cursorChar="|"
-          showCursor={false}
-          onComplete={() => setStep(3)}
-          className={styles.command}
-        />
-      ),
-      prefix: "root# ",
-      className: styles.rootTyped,
-    },
-    {
-      content: (
-        <ReactTyped
-          strings={[" React, Node.js, Docker, SQL, Python, Linux, Bootstrap"]}
-          typeSpeed={typingSpeed}
-          loop={false}
-          backSpeed={20}
-          cursorChar="|"
-          showCursor={false}
-          onComplete={() => setStep(4)}
-        />
-      ),
-    },
+   
     {
       content: (
         <>
           <ReactTyped
-            strings={["github"]}
+            strings={["services"]}
             typeSpeed={typingSpeed}
             loop={false}
             backSpeed={20}
             cursorChar="|"
             showCursor={false}
             className={styles.command}
-            onComplete={() => setStep(5)}
+            onComplete={() => setStep(3)}
           />
-          <FaGithub style={{ marginLeft: '10px', fontSize: '40px' }} />
+          
         </>
       ),
       prefix: "root# ",
@@ -89,25 +61,44 @@ const CommandLineSection = ({ onAnimationFinish }) => {
     },
     {
       content: (
-        <a
-          href="https://github.com/adamkvasniak"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <ReactTyped
-            strings={["www.github.com/adamkvasniak"]}
+            strings={["> Custom websites and apps development"]}
             typeSpeed={typingSpeed}
             loop={false}
             backSpeed={20}
-            cursorChar="|"
             showCursor={false}
             className={styles.link}
-            onComplete={onAnimationFinish}
+            onComplete={() => setStep(4)}
           />
-        </a>
       ),
     },
-  ];
+    {
+      content: (
+          <ReactTyped
+            strings={["> Online stores or bookings"]}
+            typeSpeed={typingSpeed}
+            loop={false}
+            backSpeed={20}
+            showCursor={false}
+            className={styles.link}
+            onComplete={() => setStep(5)}
+          />
+      ),
+    },
+       {
+      content: (
+          <ReactTyped
+            strings={["> Cloud and hosting"]}
+            typeSpeed={typingSpeed}
+            loop={false}
+            backSpeed={20}
+            showCursor={false}
+            className={styles.link}
+            onComplete={() => setStep(6)}
+          />
+      ),
+    },
+];
 
   const [step, setStep] = useState(0);
 
